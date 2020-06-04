@@ -15,6 +15,5 @@ param1: <a:property value="param1"/> <br>
 param2: <a:property value="param2"/> <br>
 param3: <a:property value="param3"/> <br>
 
-
 </body>
 </html>
