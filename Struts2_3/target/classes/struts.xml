@@ -4,10 +4,12 @@
     "http://struts.apache.org/dtds/struts-2.5.dtd">
     
 <struts>
-	<package name="default" extends="struts-default">
+	<package name="login" extends="struts-default">
 		<action name="login" class="org.upadhyay.suraj.action.LoginAction">
-			<result name="success">/success.jsp</result>
+			<result name="success">/search.jsp</result>
 			<result name="failure">/login.jsp</result>
 		</action>
 	</package>
+	
+	<include file="search.xml"></include>
 </struts>
