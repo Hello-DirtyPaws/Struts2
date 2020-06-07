@@ -11,8 +11,8 @@
 <body>
 
 <s:form method="post" action="login">
-	<s:textfield label="User Id" key="userId"/>
-	<s:password label="Password" key="password"/>
+	<s:textfield label="User Id" key="user.userId"/>
+	<s:password label="Password" key="user.password"/>
 	<s:submit value="submit"/>
 </s:form>
 
