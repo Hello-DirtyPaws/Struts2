@@ -12,4 +12,22 @@
 	</package>
 	
 	<include file="search.xml"></include>
+	
+	<!-- Wild card Action; 
+	/homeUser request mapped to homeUser.jsp
+	/homeAdmin request mapped to homeAdmin.jsp
+	... 
+	and so on .. * represents 1st param.
+	
+	It can also work with classes when mapping the requests
+	eg: <action name="home*" class="org.upadhyay.suraj.action.{1}Home">
+	/homeUser request mapped to UserHome.java class
+	/homeAdmin request mapped to AdminHome.java class
+	 -->
+	<package name="home" extends="struts-default">
+		<action name="home*">
+			<result>/home{1}.jsp</result>
+		</action>
+	</package>
+	
 </struts>
